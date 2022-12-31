@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<clipPath id="d">
+<circle transform="translate(824 10704)" cx="15" cy="15" r="15" fill="#2867b2"/>
+</clipPath>
+<radialGradient id="c" cx=".291" cy=".998" r="1.01" gradientTransform="translate(.001)">
+<stop stop-color="#ffd676" offset="0"/>
+<stop stop-color="#f2a454" offset=".246"/>
+<stop stop-color="#f05c3c" offset=".379"/>
+<stop stop-color="#c22f86" offset=".7"/>
+<stop stop-color="#6665ad" offset=".957"/>
+<stop stop-color="#5c6cb2" offset=".985"/>
+</radialGradient>
+</defs>
+<g transform="translate(-824 -10704)">
+<g clip-path="url(#d)">
+<g transform="translate(824 10704)">
+<path transform="translate(-532.21 -59.676)" d="M546.556,74.445a.694.694,0,0,1-.687.694h-1.785a.694.694,0,0,1-.687-.694V72.674a.694.694,0,0,1,.687-.694h1.785a.694.694,0,0,1,.687.694Z" fill="url(#c)"/>
+<g transform="translate(0)">
+<rect transform="translate(11.708 12.795)" width="2.122" height="2.185" rx="1.061" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+<circle transform="translate(13.265 13.094)" cx=".146" cy=".146" r=".146" fill="#fff"/>
+<g transform="translate(0)">
+<path transform="translate(-543.39 -71.985)" d="M573.46,95.412a6.557,6.557,0,0,1-6.544,6.572H549.937a6.556,6.556,0,0,1-6.544-6.572V78.557a6.556,6.556,0,0,1,6.544-6.572h16.982a6.556,6.556,0,0,1,6.543,6.572Z" fill="url(#c)"/>
+<g transform="translate(4.836 4.567)">
+<g transform="translate(0)">
+<path transform="translate(-596.21 -120.5)" d="m610.46 141.43h-8.117a6.147 6.147 0 0 1-6.138-6.138v-8.658a6.147 6.147 0 0 1 6.138-6.134h8.115a6.147 6.147 0 0 1 6.138 6.138v8.662a6.147 6.147 0 0 1-6.136 6.134zm-8.117-18.718a3.926 3.926 0 0 0-3.921 3.921v8.658a3.926 3.926 0 0 0 3.921 3.921h8.115a3.926 3.926 0 0 0 3.921-3.921v-8.658a3.926 3.926 0 0 0-3.921-3.921z" fill="#fff"/>
+</g>
+<g transform="translate(4.381 4.617)">
+<path transform="translate(-665.48 -193.6)" d="m671.3 205.23a5.823 5.823 0 0 1-5.817-5.817 5.91 5.91 0 0 1 1.785-4.217 5.567 5.567 0 0 1 4.074-1.6 5.993 5.993 0 0 1 4.326 1.771 5.634 5.634 0 0 1 1.451 4.075 5.949 5.949 0 0 1-1.719 4.079 5.73 5.73 0 0 1-4.1 1.709zm-0.123-8.923a2.891 2.891 0 0 0-2.024 0.836 3.187 3.187 0 0 0-0.96 2.273 3.108 3.108 0 0 0 6.215-0.03c0.042-1.9-1.105-3.019-3.147-3.073z" fill="#fff"/>
+</g>
+<g transform="translate(14.442 3.666)">
+<circle transform="translate(0)" cx="1.251" cy="1.251" r="1.251" fill="#fff"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>

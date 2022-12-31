@@ -1,0 +1,54 @@
+.topNav {
+  background-color: #fdfdfd;
+  padding: 0.5rem 0;
+
+  &--div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &--link-grp {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    a {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 25px;
+        margin-right: 0.4rem;
+      }
+
+      p {
+        font-size: 13px;
+        font-family: "Poppins", sans-serif; 
+        color: #1f1f1f;
+      }
+    }
+  }
+
+  &--btn-grp {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    button {
+      font-size: 13px;
+      padding: 8px 15px;
+      box-shadow: 1px 2px 15px 0 rgb(0 0 0 / 15%);
+      border-radius: 50px;
+      height: auto;
+      color: #1f1f1f;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+
+      &:last-child {
+        background-color: #4842a8;
+        color: #fff;
+      }
+    }
+  }
+}

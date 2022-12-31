@@ -1,0 +1,56 @@
+.locate {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+  &--title {
+    font-size: 30px;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    position: relative;
+
+    &::before {
+      content: "Locate Us";
+      font-size: 60px;
+      -webkit-text-stroke: 2px #fff;
+      left: 0;
+      position: absolute;
+      bottom: 0;
+      -webkit-text-fill-color: transparent;
+      opacity: 0.1;
+      z-index: 0;
+      width: 100%;
+    }
+  }
+
+  &--card {
+    display: flex; 
+    align-items: flex-start;
+    gap: 0.8rem;
+
+    &--content {
+        h6 {
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 5px;
+            font-weight: 500;
+            line-height: 1.2;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: .4rem;
+        }
+
+      p {
+        font-size: 12px;
+        line-height: 18px;
+        color: #ccc;
+      }
+
+      span {
+        color: #fff;
+        font-size: 13px;
+      }
+    }
+  }
+}

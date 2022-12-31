@@ -1,0 +1,74 @@
+.sidebar-contact {
+  position: fixed;
+  z-index: 9;
+  top: 60%;
+  right: -300px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 300px;
+  height: auto;
+  padding: 30px;
+  background: #4842a8;
+  color: #fff;
+  -webkit-box-shadow: 0 20px 50px rgb(0 0 0 / 5%);
+  box-shadow: 0 20px 50px rgb(0 0 0 / 5%);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+
+  &--toggle {
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    text-align: center;
+    cursor: pointer;
+    background: #4842a8;
+    top: 100px;
+    left: -48px;
+    line-height: 48px;
+  }
+
+  h5 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  &--call-info {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    a {
+      color: #fff;
+
+      img {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 1rem 0;
+  }
+
+  &--schedule {
+    background-color: #3f3a94;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a { 
+      padding: 18px;
+      color: #fff;
+      text-align: center;
+    }
+  }
+}
+
+.sidebar-contact.active {
+    right: 0;
+}

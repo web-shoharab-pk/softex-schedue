@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment } from 'react';
+import './App.scss';
+import SidebarContact from './components/common/SidebarContact';
+import WhatsApp from './components/common/WhatsApp';
+import Footer from './components/Footer/Footer';
+import Navbar from './components/Navbar/Navbar';
+import TopNav from './components/Navbar/TopNav';
+import Schedule from './components/Schedule/Schedule';
+import Social from './components/Social/Social';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <TopNav />
+
+      <Navbar />
+
+      <Schedule />
+
+      <Social />
+
+      <Footer />
+
+      {/* Whatsapp */}
+      <WhatsApp />
+
+      {/* sidebar */}
+      <SidebarContact />
+
+      {/* <ScrollToTop /> */}
+    </Fragment>
   );
 }
 

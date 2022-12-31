@@ -1,0 +1,104 @@
+.subscribe {
+  &--help {
+    h5 {
+      font-size: 30px;
+      margin-bottom: 25px;
+      margin-top: 3rem;
+      font-family: "Poppins", sans-serif;
+      position: relative;
+      text-transform: capitalize;
+      font-weight: 500;
+      line-height: 1.2;
+      color: #fff;
+
+      &::before {
+        font-size: 60px;
+        content: "Help";
+        -webkit-text-stroke: 2px #fff;
+        left: 0;
+        position: absolute;
+        bottom: 0;
+        -webkit-text-fill-color: transparent;
+        opacity: 0.1;
+        z-index: 0;
+        width: 100%;
+      }
+    }
+
+    &--list {
+      li {
+        padding: 5px 0;
+        color: #fff;
+      }
+    }
+  }
+
+  &--form {
+    h5 {
+      font-size: 30px;
+      margin-bottom: 1rem;
+      margin-top: 3rem;
+      font-family: "Poppins", sans-serif;
+      position: relative;
+      text-transform: capitalize;
+      font-weight: 500;
+      line-height: 1.2;
+      color: #fff;
+
+      &::before {
+        font-size: 60px;
+        content: "Subscribe";
+        -webkit-text-stroke: 2px #fff;
+        left: 0;
+        position: absolute;
+        bottom: 0;
+        -webkit-text-fill-color: transparent;
+        opacity: 0.1;
+        z-index: 0;
+        width: 100%;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      color: #fff;
+      line-height: 28px;
+      margin-bottom: 1.5rem;
+    }
+
+    form {
+      display: flex;
+      position: relative;
+      flex-wrap: wrap;
+      align-items: stretch;
+      justify-content: space-between;
+      width: 70%;
+      border: 1px solid #535353;
+
+      input {
+        padding: 20px 0 20px 25px;
+        height: 60px;
+        border-radius: 0;
+        background-color: #1f1f1f;
+        border-color: #535353;
+        max-width: 407px;
+        font-size: 14px;
+        color: #ccc;
+        display: block;
+        font-weight: 400;
+        line-height: 1.5;
+        background-clip: padding-box;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        width: 70%;
+      }
+
+      button {
+        background-color: #1f1f1f;
+        border-color: #535353;
+        color: #fff;
+        font-size: 16px;
+        padding: 0 35px;
+      }
+    }
+  }
+}

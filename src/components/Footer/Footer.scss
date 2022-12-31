@@ -1,0 +1,93 @@
+.footer {
+  padding-top: 140px;
+  background-color: #1f1f1f;
+
+  &--list {
+    .title {
+      color: #fff;
+      margin-top: 60px;
+      font-size: 30px;
+      margin-bottom: 25px;
+      font-family: "Poppins", sans-serif;
+      position: relative;
+      text-transform: capitalize;
+
+      &::before {
+        font-size: 60px;
+        -webkit-text-stroke: 2px #fff;
+        left: 0; 
+        position: absolute;
+        bottom: 0;
+        -webkit-text-fill-color: transparent;
+        opacity: 0.1;
+        z-index: 0;
+        width: 100%;
+      }
+    }
+    
+    .about::before {
+        content: "About";
+    }
+    .mobile::before {
+        content: "Mobile";
+    }
+    .web::before {
+        content: "WEB";
+    }
+    .ecommerce::before {
+        content: "Ecommerce";
+    }
+    .ai::before {
+        content: "AI";
+    }
+    .iot::before {
+        content: "IoT";
+    }
+    .blockchain::before {
+        content: "Blockchain";
+    }
+    .game::before {
+        content: "Game";
+    }
+    .salesforce::before {
+        content: "Salesforce";
+    }
+
+    &--item {
+      padding: 5px 0;
+
+      a {
+        color: #fff;
+        &:hover {
+          color: #dc2e3d;
+          -webkit-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+
+  &--bottom {
+    padding: 25px 0;
+    margin-top: 50px;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #fff;
+
+    a {
+      color: #fff;
+      font-size: 13px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: bolder;
+      transition: 0.5s ease-in-out;
+      b {
+        margin: .4rem 0; 
+      }
+
+      &:hover {
+        color: #0056b3;
+      }
+    }
+  }
+}
