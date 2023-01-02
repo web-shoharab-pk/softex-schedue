@@ -1,0 +1,94 @@
+.list-item {
+    cursor: pointer;
+    padding-right: 40px;
+    position: relative;
+    font-size: 14px;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-bottom: 1px solid #ccc;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform,opacity;
+    -webkit-transition: -webkit-transform .3s,opacity .3s;
+    -webkit-transition: opacity .3s,-webkit-transform .3s;
+    transition: opacity .3s,-webkit-transform .3s;
+    transition: transform .3s,opacity .3s;
+    transition: transform .3s,opacity .3s,-webkit-transform .3s;
+
+    &::before {
+        right: 20px;
+        -webkit-transform-origin: 9px 50%;
+        transform-origin: 9px 50%;
+        transform: rotate(45deg);
+        content: '';
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        display: inline-block;
+        height: 2px;
+        width: 10px;
+        background: #464c4e;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    &::after {
+        right: 20px; 
+    transform-origin: 9px 50%;
+    transform: rotate(-45deg);
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    display: inline-block;
+    height: 2px;
+    width: 10px;
+    background: #464c4e;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    }
+}
+
+.list-item-1 {
+    font-size: 14px;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-bottom: 1px solid #ccc;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform,opacity;
+    -webkit-transition: -webkit-transform .3s,opacity .3s;
+    -webkit-transition: opacity .3s,-webkit-transform .3s;
+    transition: opacity .3s,-webkit-transform .3s;
+    transition: transform .3s,opacity .3s;
+    transition: transform .3s,opacity .3s,-webkit-transform .3s; 
+    display: flex;
+    align-items: center;
+     
+    img {
+        margin-right: .5rem;
+    }
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}

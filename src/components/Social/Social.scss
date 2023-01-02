@@ -130,3 +130,26 @@
     }
   }
 }
+
+
+@media screen and (max-width: 767px) {
+  .social--link-div-item {
+    padding: 15px;
+    border-radius: 15px;  
+
+    img {
+      width: 35px;
+    }
+  }
+}
+
+@media screen and (max-width: 467px) {
+  .social--link-div-item {
+    padding: 5px;
+    border-radius: 15px;  
+
+    img {
+      width: 30px;
+    }
+  }
+}

@@ -1,9 +1,19 @@
 import { Container } from '@mui/material';
-import React from 'react';
-import './Navbar.scss';
+import React, { useState } from 'react';
 import logo from './../../images/logo.svg';
+import './Navbar.scss';
+import NavDrawer from './NavDrawer';
 
 const Navbar = () => {
+
+    const [isOpen, setIsOpne] = useState(false);
+
+      const toggleDrawer = () => {
+        setIsOpne(pre => !pre)
+    };
+
+ 
+
     return (
         <header className='navbar'>
             <Container>
@@ -22,9 +32,19 @@ const Navbar = () => {
                         <a href="/">Contact Us</a>
                         <a href="/">Get A Free Quote</a>
                     </div>
-                    {/* <div></div> */}
+                    <div className='humber-menu'  onClick={toggleDrawer}>
+                        <ul>
+                            <li>
+                                <p className={isOpen ? 'nav-is-visible' : ''}>
+                                    <span></span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </Container>
+
+            <NavDrawer isOpen={isOpen} toggleDrawer={toggleDrawer} />
         </header>
     );
 };

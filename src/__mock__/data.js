@@ -1,36 +1,29 @@
-import icon1 from './../images/fb-icon.svg';
-import icon2 from './../images/tw-icon.svg';
-import icon3 from './../images/insta-icon.svg';
-import icon4 from './../images/in-icon.svg';
-import icon5 from './../images/yt-icon.svg';
-import icon6 from './../images/tp-icon.svg';
-// 
 
 export const socialData = [
     {
         id: 1,
-        icon: icon1,
+        icon: 'https://www.hyperlinkinfosystem.com/assets/frontend_assets/img/fb-icon.svg',
     },
     {
         id: 2,
-        icon: icon2,
+        icon: 'https://www.hyperlinkinfosystem.com/assets/frontend_assets/img/tw-icon.svg',
     },
     {
         id: 3,
-        icon: icon3,
+        icon: 'https://www.hyperlinkinfosystem.com/assets/frontend_assets/img/insta-icon.svg',
     },
     {
         id: 4,
-        icon: icon4,
+        icon: 'https://www.hyperlinkinfosystem.com/assets/frontend_assets/img/in-icon.svg',
     },
     {
         id: 5,
-        icon: icon5,
+        icon: 'https://www.hyperlinkinfosystem.com/assets/frontend_assets/img/yt-icon.svg',
     },
     {
         id: 6,
-        icon: icon6,
-    } 
+        icon: 'https://www.hyperlinkinfosystem.com/assets/frontend_assets/img/tp-icon.svg',
+    }
 ];
 
 export const menuData = [
@@ -121,6 +114,24 @@ export const locateData = [
         img: 'https://www.hyperlinkinfosystem.com/assets/frontend_assets/img/uk.svg',
         title: ' UK OFFICE',
         desc: 'Level 30, The Leadenhall Building, 122 Leadenhall Street, London EC3V 4AB',
+        phone: '+44 20 8133 8639',
+    },
+]
+
+export const navData = [
+    {
+        id: 1,
+        icon: 'https://www.hyperlinkinfosystem.com/assets/frontend_assets/img/ind-flag.svg',
+        phone: '+91 8000-161161',
+    },
+    {
+        id: 2,
+        icon: 'https://www.hyperlinkinfosystem.com/assets/frontend_assets/img/us-flag.svg',
+        phone: '+1 309 791 4105',
+    },
+    {
+        id: 3,
+        icon: 'https://www.hyperlinkinfosystem.com/assets/frontend_assets/img/uk-flag.svg',
         phone: '+44 20 8133 8639',
     },
 ]
