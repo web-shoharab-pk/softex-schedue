@@ -1,5 +1,7 @@
 import { Fragment } from 'react';
 import './App.scss';
+import Message from './components/common/Message';
+import ScrollToTop from './components/common/ScrollToTop';
 import SidebarContact from './components/common/SidebarContact';
 import WhatsApp from './components/common/WhatsApp';
 import Footer from './components/Footer/Footer';
@@ -25,10 +27,13 @@ function App() {
       {/* Whatsapp */}
       <WhatsApp />
 
+      {/* Message */}
+      <Message />
+
       {/* sidebar */}
       <SidebarContact />
 
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />
     </Fragment>
   );
 }

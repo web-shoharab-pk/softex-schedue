@@ -17,7 +17,7 @@ const NavDrawer = ({ isOpen, toggleDrawer }) => {
             <ul>
                 {['Company', 'Services', 'Hire Developers', 'Case Study', 'Resources', 'Contact Us'].map((text, index) => (
                     <>
-                        <li key={index}>
+                        <li key={index.toString()}>
                             <p className='list-item'>{text}</p>
                         </li>
                     </>
@@ -25,7 +25,7 @@ const NavDrawer = ({ isOpen, toggleDrawer }) => {
             </ul>
             <ul>
                 {navData.map((item, index) => (
-                    <li key={item.id} className='list-item-1'>
+                    <li key={item.id.toString()} className='list-item-1'>
                         <img src={item.icon} alt="" />
                         {item?.phone}
                     </li>
@@ -34,7 +34,7 @@ const NavDrawer = ({ isOpen, toggleDrawer }) => {
             <ul className='social-icon'>
                 {
                     socialData?.map((item) => (
-                        <li key={item?.id}>
+                        <li key={item?.id.toString()}>
                             <a href="/">
                                 <img src={item.icon} alt="" />
                             </a>

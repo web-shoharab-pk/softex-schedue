@@ -399,3 +399,23 @@
     }
   }
 }
+
+@media screen and (max-width: 468px) {
+  .schedule--container {
+    margin: 0;
+    height: max-content;
+  }
+ 
+  .details-div--input input {
+    width: 100%;
+  }
+
+  .details-div .details-input-div div {
+    width: 100%;
+  }
+
+  .details-div .details-select-div select {
+    width: 100%;
+  }
+
+}

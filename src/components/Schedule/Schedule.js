@@ -34,9 +34,9 @@ const Schedule = () => {
 
     const isWeekend = (date) => {
         const day = date.day();
-      
+
         return day === 6;
-      };
+    };
 
     return (
         <section className='schedule'>
@@ -100,7 +100,7 @@ const Schedule = () => {
                                                 </div> :
                                                 <button onClick={() => setIsGuest(true)} className='guest-btn'>Add Guests</button>
                                         }
- 
+
                                         <div className="details-input-div">
                                             <label htmlFor="">Phone Number *</label>
                                             <div>
@@ -130,7 +130,7 @@ const Schedule = () => {
                                 : <Grid item lg={confirmCollapse ? 8 : 4} md={6} xs={12}>
                                     <div className="schedule--calender">
                                         <Grid container spacing={2}>
-                                            <Grid item lg={confirmCollapse ?  8 : 12} md={8} xs={12}>
+                                            <Grid item lg={confirmCollapse ? 8 : 12} md={8} xs={12}>
                                                 <h2>Select a Date & Tome</h2>
                                                 <LocalizationProvider dateAdapter={AdapterDayjs}>
                                                     <StaticDatePicker
@@ -140,7 +140,7 @@ const Schedule = () => {
                                                         onChange={(newValue) => {
                                                             handleDateSelect(newValue);
                                                         }}
-                                                       shouldDisableDate={isWeekend}
+                                                        shouldDisableDate={isWeekend}
                                                         renderInput={(params) => <TextField {...params} />}
                                                         inputFormat="'Week of' MMM d"
                                                     />
@@ -149,7 +149,7 @@ const Schedule = () => {
                                                 <div className="time-zome">
                                                     <h2>Time Zome</h2>
 
-                                                    <select name="" id="" value={"Asia/Dhaka (05:52"}>
+                                                    <select name="" id="">
                                                         <option value="Asia/Dhaka (05:52">Asia/Dhaka (05:52)</option>
                                                         <option value="Asia/Dhaka (05:52">Asia/Dhaka (05:52)</option>
                                                         <option value="Asia/Dhaka (05:52">Asia/Dhaka (05:52)</option>
@@ -164,35 +164,31 @@ const Schedule = () => {
                                                 </div>
                                             </Grid>
                                             {
-                                                confirmCollapse ?   <Grid item lg={4} md={4} xs={12}>
-                                                <div className="time-section">
-                                                    <p className="day-date">
-                                                        {getDayName(value)}, {getMonthName(value)} {getDay(value)}
-                                                    </p>
+                                                confirmCollapse ? <Grid item lg={4} md={4} xs={12}>
+                                                    <div className="time-section">
+                                                        <p className="day-date">
+                                                            {getDayName(value)}, {getMonthName(value)} {getDay(value)}
+                                                        </p>
 
-                                                    <div className="time-slot">
-                                                        {
-                                                            index !== '' ?
-                                                                <div className="confirm-section">
-                                                                    <button className='btn-1'>{selectTime}</button>
-                                                                    <button onClick={handleConfirm} className='btn-2'>Confirm</button>
-                                                                </div>
-                                                                : ''
-                                                        }
-                                                        {
-                                                            ['12:30am', '1:00am', '1:30am']
-                                                                .splice(index, 4)
-                                                                .map((i, l) => (
-                                                                    <div onClick={() => handleSelectTime(i, l)} key={l} className="time-slot--item">
-                                                                        <button>{i}</button>
-                                                                    </div>
-                                                                ))
-                                                        }
+                                                        <div className="time-slot"> 
+                                                            {
+                                                                ['12:30am', '1:00am', '1:30am'] 
+                                                                    .map((i, l) => (
+                                                                        index === l ?
+                                                                            <div className="confirm-section">
+                                                                                <button className='btn-1'>{selectTime}</button>
+                                                                                <button onClick={handleConfirm} className='btn-2'>Confirm</button>
+                                                                            </div> :
+                                                                            <div onClick={() => handleSelectTime(i, l)} key={l} className="time-slot--item">
+                                                                                <button>{i}</button>
+                                                                            </div>
+                                                                    ))
+                                                            }
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </Grid> : ''
+                                                </Grid> : ''
                                             }
-                                          
+
                                         </Grid>
                                     </div>
                                 </Grid>
@@ -201,7 +197,7 @@ const Schedule = () => {
 
                     </Grid>
                 </div>
-                    <hr />
+                <hr />
             </Container>
         </section>
     );

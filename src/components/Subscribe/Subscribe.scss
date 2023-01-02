@@ -102,3 +102,27 @@
     }
   }
 }
+
+
+@media screen and (max-width: 768px) {
+  .subscribe--form form {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .subscribe--form form input {
+    width: max-content;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .subscribe--form {
+    form {
+      width: 100%;
+    }
+    h5 {
+      font-size: 24px;
+    }
+  }
+}
