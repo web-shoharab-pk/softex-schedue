@@ -14,10 +14,7 @@ const ScrollToTop = () => {
         }
     };
 
-
-    window.addEventListener('scroll', checkScrollTop)
-    console.log("window.pageYOffset", stroke);
-
+    window.addEventListener('scroll', checkScrollTop) 
    
     const scrollTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
